@@ -56,10 +56,12 @@ function renderGame() {
 
 function newCard() {
     console.log("Drawing a new card from the deck!")
-    let thirdCard = getRandomCard()
-    sum += thirdCard
-    cards.push(thirdCard)
+    if (hasBlackjack === false && isAlive === true) {
+        let thirdCard = getRandomCard()
+        sum += thirdCard
+        cards.push(thirdCard)
 
-    renderGame()
+        renderGame()
+    }
 }
 

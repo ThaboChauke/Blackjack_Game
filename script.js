@@ -1,3 +1,5 @@
+const newCard = document.getElementById("newCard")
+const startGame = document.getElementById("startGame")
 let player = {
     name: "Thabo",
     chips: "11000"
@@ -16,12 +18,12 @@ let playerEl = document.getElementById("player-el")
 playerEl.textContent = player.name + ": R" + player.chips
 
 function getRandomCard() {
-    // Generate a random card number between 1 and 13 (Ace to King)
+
     let randomNumber = Math.floor(Math.random() * 13) + 1
     let cardValue = randomNumber > 10 ? 10 : randomNumber
     let cardImage = ""
 
-    // Assign card image paths based on card number and suit
+
     let suits = ["hearts", "diamonds", "spades", "clubs"]
     let randomSuit = suits[Math.floor(Math.random() * 4)]
     
@@ -41,7 +43,7 @@ function getRandomCard() {
     return { value: cardValue, image: cardImage }
 }
 
-function startGame() {
+startGame.addEventListener("click", function () {
     isAlive = true
 
     let firstCard = getRandomCard()
@@ -50,16 +52,16 @@ function startGame() {
     cards = [firstCard, secondCard]
     
     renderGame()
-}
+})
 
 function renderGame() {
     cardEl.innerHTML = "Cards: "
 
-    // Render each card image
+
     for (let i = 0; i < cards.length; i++) {
         let cardImage = document.createElement("img")
         cardImage.src = cards[i].image
-        cardImage.style.width = "100px"  // Set card width
+        cardImage.style.width = "100px"  
         cardEl.appendChild(cardImage)
     }
 
@@ -77,11 +79,12 @@ function renderGame() {
     messageEl.textContent = message
 }
 
-function newCard() {
+newCard.addEventListener("click", function () {
     if (!hasBlackjack && isAlive) {
         let newCard = getRandomCard()
         sum += newCard.value
         cards.push(newCard)
         renderGame()
     }
-}
+})
+

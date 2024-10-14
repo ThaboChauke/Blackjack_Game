@@ -1,35 +1,46 @@
 # BlackJack Game
 
-This is a simple BlackJack game built with HTML, CSS, and JavaScript. The game allows a player to draw cards and try to reach 21 without going over.
+A simple and interactive BlackJack game built using HTML, CSS, and JavaScript. Play against the odds by drawing cards to reach 21 without going over!
 
-## Features
+## 🚀 Features
 
-- Draw cards and calculate the sum of their values.
-- A player wins if they get exactly 21 ("BlackJack").
-- The game ends if the player's card total exceeds 21.
-- Player can choose to draw a new card or end the game based on their total.
+- **Card Drawing:** Draw cards, and watch your total grow.
+- **Win Condition:** Achieve exactly 21 to win the game with a BlackJack.
+- **Game Over:** Exceed 21, and you lose.
+- **Player Choice:** Decide whether to draw another card or end your turn based on your card total.
 
-## Game Rules
+## 🎲 Game Rules
 
-- Cards range from 1 to 13. Cards 2-10 have their face value.
-- Aces (1) are worth 11 points.
-- Face cards (11, 12, 13) are all worth 10 points.
-- The goal is to reach 21 without exceeding it.
+- **Card Values:**
+  - Number cards (2–10) hold their face value.
+  - **Aces (1)** are worth 11 points.
+  - **Face cards (J, Q, K)** are each worth 10 points.
   
-## How to Play
+- **Objective:** Reach a total of 21 without exceeding it. 
 
-1. Click the "START GAME" button to begin the game.
-2. The game will deal two random cards and calculate their sum.
-3. If your sum is less than or equal to 20, you can click "NEW CARD" to draw another card.
-4. If your sum reaches exactly 21, you win with a BlackJack.
-5. If your sum exceeds 21, you lose and are out of the game.
+## 🎮 How to Play
 
-## Installation
+1. **Start the Game:** Click the "START GAME" button to deal your first two cards.
+2. **New Cards:** If your sum is less than or equal to 20, click "NEW CARD" to draw another card.
+3. **Win with BlackJack:** If your total equals 21, congratulations, you've won!
+4. **Lose by Bust:** If your total exceeds 21, you're out of the game.
 
-1. Clone or download the repository to your local machine.
-   
+## 🛠️ Installation
+
+To get this game running locally, follow these steps:
+
+1. Clone the repository to your local machine:
    ```bash
    git clone https://github.com/ThaboChauke/blackjack-game.git
+   ```
    
+2. Navigate to the game directory:
+   ```bash
    cd blackjack-game
-    ```
+   ```
+
+3. Open the `index.html` file in your browser, and you're ready to play!
+
+---
+
+Enjoy the game and may the odds be ever in your favor! 🎉

@@ -2,10 +2,13 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #016f32;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     font-weight: bold;
     color: antiquewhite;
-
 }
 
 h1 {
@@ -14,6 +17,12 @@ h1 {
 
 #message-el {
     font-style: italic;
+}
+
+#cards-el img {
+    margin: 5px;
+    border: 2px solid #fff;
+    border-radius: 5px;
 }
 
 button {
@@ -27,4 +36,9 @@ button {
     border-radius: 2px;
     margin-bottom: 2px;
     margin-top: 2px;
+}
+
+button:hover {
+    background-color: #f0c040;
+    cursor: pointer;
 }

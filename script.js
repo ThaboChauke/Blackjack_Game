@@ -77,7 +77,10 @@ startGame.addEventListener("click", function () {
     cards = [firstCard, secondCard]
 
     renderGame()
-    renderDealerCards();
+    renderDealerCards()
+
+    startGame.style.display = "none"
+    newCard.style.display = "block"
 })
 
 function renderGame() {

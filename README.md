@@ -20,8 +20,8 @@ A simple and interactive BlackJack game built using HTML, CSS, and JavaScript. P
 
 ## 🎮 How to Play
 
-1. **Start the Game:** Click the "START GAME" button to deal your first two cards.
-2. **New Cards:** If your sum is less than or equal to 20, click "NEW CARD" to draw another card.
+1. **Start the Game:** Click the `START GAME` button to deal your first two cards.
+2. **New Cards:** If your sum is less than or equal to 20, click `HIT` to draw another card.
 3. **Win with BlackJack:** If your total equals 21, congratulations, you've won!
 4. **Lose by Bust:** If your total exceeds 21, you're out of the game.
 

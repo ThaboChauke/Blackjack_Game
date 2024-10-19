@@ -8,14 +8,31 @@
 </head>
 <body>
     <h1>BlackJack</h1>
+    
+    <section id="player-section">
+        <h2>Player</h2>
+        <div id="player-cards">
+            <p id="cards-el"></p>
+        </div>
+        <p id="sum-el">Sum: </p>
+    </section>
 
-    <p id="message-el">Want to play a round?</p>
-    <div id="cards-el"></div>
-    <p id="sum-el">Sum: </p>
+    <section id="dealer-section">
+        <h2>Dealer</h2>
+        <div id="dealer-cards">
+        </div>
+        <p id="dealer-sum-el">Sum: </p>
+    </section>
 
-    <button id="startGame" onclick="startGame()">START GAME</button>
-    <button id="newCard">NEW CARD</button>
-    <p id="player-el"></p>
+    <section id="player-info-section">
+        <p id="message-el">Want to play a round?</p>
+        <p id="player-el"></p>
+    </section>
+
+    <section id="buttons-section">
+        <button id="startGame">START GAME</button>
+        <button id="newCard">NEW CARD</button>
+    </section>
 
     <script src="script.js"></script>
 </body>
